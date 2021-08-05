@@ -1,0 +1,91 @@
+.category
+  padding-top: 60px
+  padding-bottom: 100px
+  &-container
+    max-width: 1140px
+  &-slide
+    width: 265px
+    height: 240px
+  &__item
+    position: relative
+    display: flex
+    flex-direction: column
+    align-items: center
+    width: 100%
+    height: 100%
+    border: 1px solid $light2-gray
+    box-sizing: border-box
+    border-radius: 8px
+    padding: 40px 10px 30px 10px
+    justify-content: start
+  &__img
+    position: absolute
+    width: 42px
+    height: 40px
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    &-wrapper
+      position: relative
+      width: 64px
+      height: 64px
+      border-radius: 50%
+      background-color: $white-blue
+      margin-bottom: 40px
+  &__title
+    font-family: Roboto
+    font-style: normal
+    font-weight: 500
+    font-size: 22px
+    line-height: 32px
+    letter-spacing: 0.2px
+    color: $dark-blue
+    text-align: center
+    max-width: 100%
+    max-height: 32px
+    overflow: hidden
+    text-overflow: ellipsis
+  &__section
+    position: absolute
+    bottom: 30px
+    max-width: 100%
+    font-family: Open Sans
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 22px
+    color: $dark-gray
+    text-align: center
+    max-width: 100%
+    max-height: 32px
+    overflow: hidden
+    text-overflow: ellipsis
+
+.category
+  &-button
+    padding: 0
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    width: 56px
+    height: 56px
+    border: none
+    box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.08)
+    border-radius: 2000px
+    cursor: pointer
+    background-repeat: no-repeat
+    background-position: center
+    background-size: 14px
+    background-color: $white
+    z-index: 90
+    &--next
+      right: -28px
+    &--prev
+      left: -28px
+
+.container
+  &-category
+    position: relative
+  
+.category-button.swiper-button-disabled
+  display: none

@@ -1,0 +1,77 @@
+// Контейнер с шапкой
+.header
+  padding: 37px 0px 26px 0px
+  &-wrapper
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+// Логотип
+.logo
+  width: 90px
+  height: 28px
+  display: block
+  &__image
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+// Меню навигации
+.nav
+  display: flex
+  &__list
+    padding-left: 0px
+    display: flex
+    margin: 0
+    height: 100%
+    align-items: center
+  &__item
+    margin-right: 22px
+    list-style-type: none
+  &__link
+    text-decoration: none
+    font-style: normal
+    font-weight: 600
+    font-size: 16px
+    line-height: 22px
+    text-align: center
+    color: $dark-blue
+
+// Кнопка Получить в шапке!
+.button
+  &-get
+    margin-left: 41px
+    width: 148px
+    height: 51px
+    padding: 14px 27px
+    border: 2px solid $blue
+    border-radius: 8px
+    background-color: transparent
+    font-style: normal
+    font-weight: bold
+    font-size: 16px
+    line-height: 22px
+    text-align: center
+    color: $blue
+    cursor: pointer
+    overflow: hidden
+    text-overflow: ellipsis
+
+// Мобильное меню
+.menu
+  &-button
+    position: fixed
+    top: 22px
+    right: 24px
+    &--mobile
+      &--hidden
+        display: none
+
+.nav
+  &-menu
+    display: none
+
+.body
+  &-overflow
+    &-hidden
+      overflow: hidden

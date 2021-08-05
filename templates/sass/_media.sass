@@ -1,0 +1,428 @@
+@media (max-width: 1200px)
+  .container
+    max-width: 960px
+    &-category
+      max-width: 850px
+
+  .book
+    &__description
+      max-width: 460px
+    &__button
+      &__view
+        &-demo
+          width: 209px
+
+  .recommendation
+    &__list
+      width: 415px
+    &__item
+      width: 100%
+      &:nth-child(n+4)
+        display: none
+      &:nth-child(n+3)
+        margin-bottom: 0px
+
+  .top
+    &-wrapper
+      width: 500px
+    &__title
+      max-width: 250px
+
+  .offer
+    &-more
+      &__button
+        width: 200px
+
+  .category
+    &__title
+      font-size: 18px
+    &__section
+      font-size: 13px
+      max-height: 23px
+
+  .unreleased
+    &-slide
+      margin-right: 48px
+      &--last
+        margin-right: 0px
+
+@media (max-width: 992px)
+  .container
+    max-width: 720px
+    &-category
+      max-width: 690px
+
+  .book
+    &-image
+      width: 340px
+      height: 480px
+      &__img
+        width: 200px
+        height: 324px
+    &__title
+      max-width: 340px
+      font-size: 32px
+      line-height: 50px
+      margin-bottom: 20px
+    &__description
+      max-width: 350px
+      margin-bottom: 30px
+      font-size: 16px
+    &-buttons
+      justify-content: space-between
+    &__button
+      width: 170px
+      &__buy
+        &-now
+          margin-right: 0px
+
+  .recommendation
+    &__list
+      width: 350px
+  
+  .top
+    &-wrapper
+      width: 350px
+    &__title
+      max-width: 170px
+
+  .unreleased
+    &-slide
+      margin-right: 54px
+      &--last
+        margin-right: 0px
+    
+@media (max-width: 768px)
+  .container
+    max-width: 560px
+    width: 88%
+
+  .header
+    padding: 18px 0px
+    &--fixed
+      position: fixed
+      background-color: $white
+      left: 0
+      top: 0
+      right: 0
+      z-index: 99
+
+  // Ссылки в шапке
+  .nav
+    &--mobile
+      &--hidden
+        display: none
+    
+  // Кнопка перехода в меню
+  .menu
+    &-button
+      &--mobile
+        &--hidden
+          display: flex
+          width: 22px
+          height: 18px
+          padding: 0
+          align-items: center
+          justify-content: space-between
+          flex-direction: column
+          border: none
+          background-color: transparent
+          cursor: pointer
+      &__line
+        width: 100%
+        height: 2px
+        background-color: $dark-blue
+        
+  .nav
+    &__mobile
+      &--visible
+        display: flex
+        position: fixed
+        top: 64px
+        right: 0
+        left: 0
+        bottom: 0
+        flex-direction: column
+        align-items: center
+        background-color: $gray-main      
+    &__list
+      flex-direction: column
+      margin-top: 30px
+    &__item
+      margin-bottom: 40px
+      margin-right: 0
+
+  .button
+    &-get
+      margin-left: 0px
+      
+  .book
+    margin-top: 64px
+    padding-top: 36px
+    &-wrapper
+      flex-direction: column
+    &-text
+      display: flex
+      align-items: center
+      flex-direction: column
+      margin-bottom: 36px
+    &__title
+      display: flex
+      flex-direction: column
+      max-width: 100%
+      text-align: center
+      font-size: 32px
+      line-height: 40px
+      margin-bottom: 24px
+    &__author
+      font-size: 16px
+      margin-bottom: 32px
+    &__description
+      max-width: 100%
+      line-height: 23px
+      text-align: center
+      margin-bottom: 17px
+    &-buttons
+      width: 70%
+    &-image
+      width: 560px
+      height: 667px
+      &__img
+        width: 350px
+        height: 522px
+
+  .offer
+    padding-top: 7px
+    padding-bottom: 56px
+    &-wrapper
+      flex-direction: column
+    &__title
+      text-align: center
+      margin-bottom: 46px
+      font-size: 28px
+      line-height: 36px
+      &-month
+        margin-bottom: 36px
+    &__price
+      text-align: center
+      margin-bottom: 20px
+      &-top
+        margin-bottom: 14px
+        text-align: left
+    &__buy
+      justify-content: center
+      &-top
+        justify-content: start
+    &-more
+      height: 48px
+
+  .recommendation
+    width: 100%
+    margin-bottom: 56px
+    &__item
+      width: 100%
+      height: 420px
+      padding: 0px 18px
+      flex-direction: column
+      margin-top: 28px
+      margin-bottom: 0px
+      &:nth-child(n+2)
+        display: none
+    &__list
+      width: 100%
+      margin-bottom: -8px
+    &__title
+      max-width: 100%
+      text-align: center
+      font-size: 20px
+      line-height: 24px
+      margin-bottom: 12px
+    &__img
+      width: 175px
+      height: 250px
+      margin-top: -28px
+      margin-bottom: 19px
+    &__section
+      max-width: 100%
+      text-align: center
+      margin-bottom: 16px
+      font-size: 14px
+      line-height: 20px
+
+  .top
+    &-wrapper
+      width: 100%
+      padding-top: 26px
+      padding-left: 15px
+    &__img
+      width: 136px
+      height: 200px
+      margin-right: 14px
+    &__item
+      height: 200px
+      justify-content: start
+    &__title
+      max-width: 350px
+    &__link
+      margin-top: 6px
+      padding-top: 20px
+      padding-bottom: 20px
+  
+  .horizontal
+    &::first-line
+      &__line
+        margin-bottom: 55px
+
+  .category
+    padding-bottom: 140px
+    &__title
+      font-size: 18px
+      max-height: 32px
+    &__section
+      font-size: 13px
+      max-height: 23px
+    &-button
+      top: 107%
+      bottom: 0 
+      width: 48px
+      height: 48px
+      &--next
+        left: 59%
+        transform: translateX(-40%)
+      &--prev
+        left: 38%
+        transform: translateX(-40%)
+
+  .unreleased
+    padding-top: 48px
+    padding-bottom: 130px
+    &-slide
+      width: 100%
+      margin-right: 0px
+      text-align: center
+    &__title
+      text-align: center
+    &__img
+      width: 300px
+      height: 434px
+    &-button
+      top: auto
+      bottom: -85px
+      &--next
+        right: 30%
+      &--prev
+        left: 30%
+    &-button
+      &__svg
+        width: 48px
+        height: 48px
+        
+@media (max-width: 576px)
+  .book
+    &-image
+      width: 280px
+      height: 333px
+      &__img
+        width: 144px
+        height: 215px
+    &-buttons
+      flex-direction: column
+    &__button
+      padding: 7px 10px
+      font-size: 16px
+      line-height: 22px
+      &__buy
+        &-now
+          margin-bottom: 15px
+
+  .recommendation
+    &__item
+      height: 312px
+      padding: 0px 18px 32px 18px
+    &__img
+      width: 96px
+      height: 137px
+
+  .top
+    &__item
+      height: 142px
+    &__title
+      max-width: 110px
+      font-family: Roboto Condensed
+      max-height: 48px
+      font-size: 16px
+      line-height: 24px
+      margin-bottom: 12px
+    &__img
+      width: 96px
+      height: 142px
+    &__list
+      margin-bottom: 13px    
+
+  .offer
+    &__price
+      &-recommendation
+        font-size: 16px
+        line-height: 20px
+    &-more
+      &__button
+        text-transform: none
+    &__button
+      &-recommendation
+        width: 115px
+
+  .container
+    &-category
+      max-width: 100%
+      width: 91%
+
+  .category
+    &-slide
+      width: 140px
+      height: 182px
+    &__item
+      padding: 20px 13px 20px 13px
+    &__title
+      font-family: Roboto Condensed
+      font-style: normal
+      font-weight: bold
+      font-size: 16px
+      line-height: 20px
+      text-align: center
+      letter-spacing: 0.2px
+      max-height: 42px
+    &__section
+      bottom: 20px
+      font-size: 12px
+      line-height: 20px
+      max-height: 40px
+      max-width: 80%
+    &-button
+      top: 107%
+      bottom: 0 
+      width: 48px
+      height: 48px
+      &--next
+        left: 59%
+        transform: translateX(-40%)
+      &--prev
+        left: 38%
+        transform: translateX(-40%)
+    &__img
+      width: 23px
+      height: 23px
+      &-wrapper
+        width: 36px
+        height: 36px
+        margin-bottom: 11px
+  
+  .unreleased
+    &-container
+      margin-top: 41px
+    &__title
+      font-size: 28px
+      line-height: 36px
+    &__img
+      width: 206px
+      height: 300px
+          

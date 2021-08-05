@@ -1,0 +1,68 @@
+@media (min-width: 992px)
+  .nav
+    &__link
+      &:hover
+        color: $crimson
+      &:active 
+        color: $dark-blue
+
+  .button
+    &-get
+      &:hover
+        border-color: $yellow
+        color: $yellow
+  
+  .book
+    &__button
+      &__buy
+        &-now
+          &:hover
+            background-color: $yellow
+      &__view
+        &-demo
+          &:hover
+            border: 2px solid $yellow
+            color: $yellow
+          &:active
+            border-color: $blue
+            background-color: $blue
+            color: $white
+            
+  .recommendation
+    &__item
+      &:hover
+        border-color: $yellow
+
+  .offer
+    &__button
+      &:hover
+        background-color: $crimson
+
+  .offer
+    &-more
+      &:hover
+        color: $yellow
+      &:active
+        color: $blue
+
+  .top
+    &__link
+      &:hover
+        color: $yellow
+      &:active
+        color: $blue
+          
+  .icon-like
+    &:hover
+      fill: $yellow
+
+  .category
+    &-button
+      &:active
+        box-shadow: none
+        
+  .category-button:hover .category-button__img
+    fill: $crimson
+
+  .unreleased-button[aria-disabled="false"]:hover .unreleased-button__img
+    stroke: $yellow
