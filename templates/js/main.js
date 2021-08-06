@@ -19,6 +19,19 @@ $(document).ready(function () {
     });
   });
 
+  // Like в video
+  document.querySelectorAll(".video-like").forEach((button) => {
+    button.addEventListener("click", (e) => {
+      if (button.querySelector("path").getAttribute("fill") === "#1565D8") {
+        button.querySelector("path").setAttribute("fill", "#DC143C");
+      } else if (
+        button.querySelector("path").getAttribute("fill") === "#DC143C"
+      ) {
+        button.querySelector("path").setAttribute("fill", "#1565D8");
+      }
+    });
+  });
+
   // Modal Window
   var modalButton = $("[data-toggle=modal]");
   var closeModalButton = $(".modal__close");
@@ -137,5 +150,50 @@ $(document).ready(function () {
     keyboard: {
       enabled: true,
     },
+  });
+
+  // Главное видео
+  $(".video-play-button").on("click", function onYouTubeIframeAPIReady() {
+    player = new YT.Player("main-player", {
+      videoId: "87by1DjfxLw",
+      events: {
+        onReady: videoPlay,
+      },
+    });
+  });
+
+  function videoPlay(event) {
+    event.target.playVideo();
+    event.target.setVolume(10);
+  }
+
+  // Видео 1
+  $(".play-video-1").on("click", function onYouTubeIframeAPIReady() {
+    player = new YT.Player("video-one", {
+      videoId: "qJqHjDsfKP0",
+      events: {
+        onReady: videoPlay,
+      },
+    });
+  });
+
+  // Видео 2
+  $(".play-video-2").on("click", function onYouTubeIframeAPIReady() {
+    player = new YT.Player("video-two", {
+      videoId: "87by1DjfxLw",
+      events: {
+        onReady: videoPlay,
+      },
+    });
+  });
+
+  // Видео 3
+  $(".play-video-3").on("click", function onYouTubeIframeAPIReady() {
+    player = new YT.Player("video-three", {
+      videoId: "87by1DjfxLw",
+      events: {
+        onReady: videoPlay,
+      },
+    });
   });
 });

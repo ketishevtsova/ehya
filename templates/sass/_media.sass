@@ -46,6 +46,39 @@
       &--last
         margin-right: 0px
 
+  .story
+    &-wrapper
+      width: 900px
+
+  .story
+    &__video
+      &-one
+        width: 280px
+    &__video
+      &-two
+        width: 280px
+    &__video
+      &-three
+        width: 280px
+
+  .blog
+    &-wrapper
+      grid-template-columns: 475px 1fr
+      column-gap: 15px
+    &-other
+      &__info
+        max-width: 180px
+      &__img
+        margin-right: 15px
+    &__all
+      margin-right: 35px
+
+  .subscribe
+    &__title
+      font-size: 30px
+    &__form
+      width: 390px
+
 @media (max-width: 992px)
   .container
     max-width: 720px
@@ -92,6 +125,69 @@
       &--last
         margin-right: 0px
     
+  .story
+    &-wrapper
+      width: 660px
+
+  .story
+    &__video
+      &-one
+        width: 315px
+    &__video
+      &-two
+        width: 315px
+  
+  .video
+    &-three
+      display: none
+
+  .blog
+    &-wrapper
+      grid-template-columns: 375px 1fr
+      column-gap: 15px
+    &__all
+      justify-self: center
+      margin-right: 0px
+    &-main
+      &__img
+        height: 270px
+        margin-bottom: 35px
+      &__description
+        max-height: 120px
+    &-other
+      &__item
+        flex-direction: column
+        align-items: center
+        margin-bottom: 20px
+        height: 250px
+        &:last-child
+          margin-bottom: 0px
+          display: none
+        &:nth-child(2)
+          margin-bottom: 0px
+      &__img
+        width: 250px
+        height: 150px
+        margin-right: 0px
+      &__info
+        max-width: 250px
+      &__text, &__date, &__link
+        text-align: left
+      &__list
+        height: 100%  
+
+  .subscribe
+    &-wrapper
+      padding-left: 30px
+      padding-right: 30px
+    &__title
+      font-size: 25px
+      line-height: 36px
+    &__form
+      width: 390px
+    &__button
+      width: 130px
+
 @media (max-width: 768px)
   .container
     max-width: 560px
@@ -317,6 +413,175 @@
         width: 48px
         height: 48px
         
+  .story
+    padding-top: 44px
+    padding-bottom: 48px
+    &-wrapper
+      max-width: 510px
+
+  .story
+    &__text
+      flex-direction: column
+    &__title
+      font-size: 28px
+      line-height: 36px
+      text-align: center
+      margin-bottom: 24px
+    &__description
+      font-size: 18px
+      line-height: 25px
+      text-align: center
+      margin-right: 0px
+      margin-bottom: 35px
+      max-width: 100%
+    &__video
+      &-main
+        margin-top: 0px
+        height: 210px
+        margin-bottom: 18px
+      &-one
+        width: 100%
+        height: 200px
+        margin-bottom: 16px
+      &-two
+        width: 100%
+        height: 200px
+        margin-bottom: 16px
+
+  .video
+    &-play
+      &-button
+        width: 56px
+        height: 56px
+      &-white
+        width: 21px
+        height: 27px
+        &-blue 
+          width: 17px
+          height: 22px
+    &-title
+      font-size: 16px
+      line-height: 20px
+    &-one
+      width: 240px
+    &-two
+      width: 240px
+
+  .video    
+    &-head
+      grid-template-columns: 100%
+      grid-template-rows: 33% 33% 33%
+      row-gap: 6px
+    &-title
+      font-size: 16px
+      line-height: 20px
+      justify-self: center
+    &-description
+      font-size: 12px
+      line-height: 20px
+      justify-self: center
+      grid-row: 2
+      grid-column: 1
+    &-like
+      cursor: pointer
+      grid-row: 3
+      grid-column: 1
+      justify-self: center
+
+  .partners
+    &__item
+      flex-basis: 30%
+      &:nth-child(n+7)
+        display: none
+
+  .blog
+    padding-top: 56px
+    padding-bottom: 42px
+    &-wrapper
+      grid-template-columns: 510px
+      grid-template-rows: 5% 50% 40% 5%
+      row-gap: 0px
+      column-gap: 0px
+      justify-content: center
+    &__title
+      text-align: center
+    &__all
+      grid-row: 4
+      grid-column: 1
+      width: 159px
+      height: 44px
+      font-size: 14px
+      line-height: 20px
+      letter-spacing: 0.175px
+    &-main
+      width: 100%
+      grid-row: 2
+      grid-column: 1
+      margin-top: 46px
+      margin-bottom: 35px
+      &__img
+        height: 300px
+        margin-bottom: 19px
+      &__description
+        font-size: 12px
+        line-height: 24px
+        padding: 0 0
+        max-width: 100%
+        max-height: 74px
+      &__title
+        padding: 0 0
+        margin-bottom: 10px
+    &-other
+      grid-row: 3
+      grid-column: 1
+      margin-bottom: 25px
+      &__item
+        height: 110px
+        margin-bottom: 31px
+        flex-direction: row
+        &:nth-child(2)
+          margin-bottom: 31px
+        &:last-child
+          display: flex
+      &__img
+        width: 200px
+        height: 110px
+        margin-right: 20px
+      &__info
+        max-width: 300px
+        padding: 0px 0px
+      &__link
+        font-size: 12px
+      &__date
+        font-size: 12px
+        line-height: 20px
+        margin-bottom: 5px
+      &__title
+        font-size: 16px
+        line-height: 20px
+        max-height: 42px
+        margin-bottom: 15px
+
+  .subscribe
+    &-container
+      width: 100%
+      max-width: 100%
+    &-wrapper
+      border-radius: 0px
+      flex-direction: column
+      align-items: center
+      padding-bottom: 28px
+      justify-content: start
+    &__title
+      font-size: 25px
+      line-height: 36px
+      margin-bottom: 32px
+      max-width: 90%
+    &__button
+      width: 130px
+    &__form
+      width: 447px
+
 @media (max-width: 576px)
   .book
     &-image
@@ -426,3 +691,148 @@
       width: 206px
       height: 300px
           
+  .story
+    &-container
+      width: 300px
+    &-wrapper
+      max-width: 300px
+
+  .story
+    &__video
+      &-main
+        background-image: url(../img/video-main-mobile.jpg)
+      &-one
+        height: 138px
+        background-image: url(../img/video-other-one-mobile.png)
+      &-two
+        height: 138px
+        background-image: url(../img/video-other-two-mobile.png)
+
+  .video
+    &-one
+      width: 140px
+    &-two
+      width: 140px
+
+  .video    
+    &-like
+      margin-top: 5px
+      width: 10px
+      height: 14px
+
+  .partners
+    padding-top: 37px
+    padding-bottom: 32px
+    &__list
+      margin-top: 30px
+    &__title
+      line-height: 30px
+      max-width: 280px
+      margin: auto
+    &__item
+      flex-basis: 50%
+      margin-bottom: 20px
+    &__slack
+      width: 99px
+      height: 29px
+    &__netflix
+      width: 86px
+      height: 23px
+    &__fitbit
+      width: 87px
+      height: 23px
+    &__google
+      width: 86px
+      height: 29px
+    &__airbnb
+      width: 86px
+      height: 27px
+    &__uber
+      width: 87px
+      height: 19px
+
+  .blog
+    &-wrapper
+      grid-template-columns: 280px
+      grid-template-rows: 5% 41% 46% 8%
+    &__title
+      font-size: 28px
+      line-height: 36px
+      text-align: center
+    &-main
+      &__img
+        height: 120px
+      &__title
+        font-size: 16px
+        line-height: 20px
+    &-other
+      grid-row: 3
+      grid-column: 1
+      margin-bottom: 41px
+      &__item
+        height: 90px
+        margin-bottom: 31px
+        flex-direction: row
+        &:nth-child(2)
+          margin-bottom: 31px
+        &:last-child
+          display: flex
+      &__img
+        width: 90px
+        height: 90px
+        margin-right: 20px
+      &__info
+        max-width: 170px
+        padding: 0px 0px
+      &__link
+        font-size: 10px
+      &__date
+        font-size: 10px
+        line-height: 20px
+        margin-bottom: 5px
+      &__title
+        font-size: 14px
+        line-height: 20px
+        max-height: 42px
+        margin-bottom: 5px
+
+  .subscribe
+    &-container
+      height: 306px
+      width: 320px
+      max-width: 320px
+    &-wrapper
+      padding-top: 26px
+      padding-left: 24px
+      padding-right: 24px
+      height: 306px
+      max-height: 306px
+      background-image: url(../img/subscribe-mobile.jpg)
+      align-items: start
+    &__title
+      font-size: 28px
+      line-height: 36px
+      margin-bottom: 42px
+      max-width: 210px
+    &__form
+      width: 272px
+      height: 112px
+      margin-top: 0px
+    &__button
+      width: 250px
+      height: 42px
+      top: auto
+      right: 11px
+      bottom: 12px
+    &__input
+      width: 272px
+      height: 112px
+      padding: 2px 10px 55px 48px
+
+  
+  .icon
+    &-email
+      &-send
+        top: 20px
+        left: 20px
+        transform: translateY(0%)
