@@ -42,11 +42,12 @@
     line-height: 22px
     color: $button-text
     border-radius: 4px
+    outline: none
   &__button
     position: absolute
     border-radius: 4px
     width: 163px
-    height: 48px
+    padding: 12px 16px
     right: 4px
     top: 4px
     border: none 
@@ -60,7 +61,7 @@
     overflow: hidden
     text-overflow: ellipsis
     cursor: pointer
-    padding: 0 10px
+    max-width: 180px
 
 .icon
   &-email
@@ -72,8 +73,8 @@
       height: 18px
       transform: translateY(-50%)
 
-label#email-error
+label#email-subscribe-error
   position: absolute
   top: 100%
   left: 0
-  z-index: 10
+  z-index: 50

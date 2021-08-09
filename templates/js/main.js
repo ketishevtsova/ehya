@@ -36,29 +36,29 @@ $(document).ready(function () {
   var modalButton = $("[data-toggle=modal]");
   var closeModalButton = $(".modal__close");
   modalButton.on("click", openModal);
-
   closeModalButton.on("click", closeModal);
-
-  $(document).keydown(function (e) {
-    var modalIsOpen = $(".modal__dialog").hasClass("modal__dialog--visible");
-    if (e.keyCode === 27 && modalIsOpen) {
-      closeModal(e);
-    }
-  });
+  $(".modal__overlay").on("click", closeModal);
+  document.addEventListener("keyup", closeModal);
 
   function openModal() {
     var modalOverlay = $(".modal__overlay");
     var modalDialog = $(".modal__dialog");
     modalOverlay.addClass("modal__overlay--visible");
     modalDialog.addClass("modal__dialog--visible");
+    $("body").css("overflow", "hidden");
+    $("body").css("padding-right", "17px");
   }
 
   function closeModal(event) {
+    $("body").css("overflow", "auto");
+    if (event.key === "Escape" || event.type === "click") {
+      var modalOverlay = $(".modal__overlay");
+      var modalDialog = $(".modal__dialog");
+      modalOverlay.removeClass("modal__overlay--visible");
+      modalDialog.removeClass("modal__dialog--visible");
+      $("body").css("padding-right", "0");
+    }
     event.preventDefault();
-    var modalOverlay = $(".modal__overlay");
-    var modalDialog = $(".modal__dialog");
-    modalOverlay.removeClass("modal__overlay--visible");
-    modalDialog.removeClass("modal__dialog--visible");
   }
 
   $('input[type="tel"]').mask("+7 (000) 000-00-00");
@@ -72,25 +72,15 @@ $(document).ready(function () {
           required: true,
           minlength: 18,
         },
-        phone: {
-          required: true,
-          minlength: 18,
-        },
       },
       messages: {
-        "name-modal": "Name is required",
-        name: "Name is required",
+        "name-modal": "Имя обязательно",
         "phone-modal": {
-          required: "Phone is required",
-          minlength: jQuery.validator.format("Format input +7 (999) 999-99-99"),
+          required: "Телефон обязателен",
+          minlength: jQuery.validator.format("Формат: +7 (999) 999-99-99"),
         },
-        phone: {
-          required: "Phone is required",
-          minlength: jQuery.validator.format("Format input +7 (999) 999-99-99"),
-        },
-        "email-news": "Email is required",
-        "email-modal": "Email is required",
-        email: "Email is required",
+        "email-modal": "Укажите почту! Формат: a@a",
+        "email-subscribe": "Укажите почту! Формат: a@a",
       },
     });
   });
@@ -155,7 +145,7 @@ $(document).ready(function () {
   // Главное видео
   $(".video-play-button").on("click", function onYouTubeIframeAPIReady() {
     player = new YT.Player("main-player", {
-      videoId: "87by1DjfxLw",
+      videoId: "xSgT4ZtT5M0",
       events: {
         onReady: videoPlay,
       },
@@ -170,7 +160,7 @@ $(document).ready(function () {
   // Видео 1
   $(".play-video-1").on("click", function onYouTubeIframeAPIReady() {
     player = new YT.Player("video-one", {
-      videoId: "qJqHjDsfKP0",
+      videoId: "p99ZE1SL4C0",
       events: {
         onReady: videoPlay,
       },
@@ -180,7 +170,7 @@ $(document).ready(function () {
   // Видео 2
   $(".play-video-2").on("click", function onYouTubeIframeAPIReady() {
     player = new YT.Player("video-two", {
-      videoId: "87by1DjfxLw",
+      videoId: "h_kcOChR6ao",
       events: {
         onReady: videoPlay,
       },
@@ -190,10 +180,34 @@ $(document).ready(function () {
   // Видео 3
   $(".play-video-3").on("click", function onYouTubeIframeAPIReady() {
     player = new YT.Player("video-three", {
-      videoId: "87by1DjfxLw",
+      videoId: "NEKjA6n8Ge0",
       events: {
         onReady: videoPlay,
       },
+    });
+  });
+
+  $('[data-btn="toTop"]').hide();
+
+  // появление/затухание кнопки #back-top
+  $(function () {
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 100) {
+        $('[data-btn="toTop"]').fadeIn();
+      } else {
+        $('[data-btn="toTop"]').fadeOut();
+      }
+    });
+
+    // при клике на ссылку плавно поднимаемся вверх
+    $('[data-btn="toTop"]').click(function () {
+      $("body,html").animate(
+        {
+          scrollTop: 0,
+        },
+        1000
+      );
+      return false;
     });
   });
 });

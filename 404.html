@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- // интернет магазин -->
+    <!-- 404 -->
+    <!-- thankyou html -->
+    <title>Ehya - Bookstore</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto+Condensed:wght@700&family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="templates/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="templates/css/style.css" />
+  </head>
+  <body>
+    <header class="header header--fixed">
+      <div class="container">
+        <div class="header-wrapper">
+          <a href="index.html" class="logo logo-mobile">
+            <img
+              class="logo__image"
+              src="templates/img/logo.png"
+              alt="Logo: ehya logo"
+            />
+          </a>
+          <div class="nav nav--mobile--hidden">
+            <nav class="nav-wrapper">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a href="#" onclick="return false" class="nav__link"
+                    >Рекомендации</a
+                  >
+                </li>
+                <li class="nav__item">
+                  <a href="#" onclick="return false" class="nav__link">Книги</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" onclick="return false" class="nav__link">Блог</a>
+                </li>
+              </ul>
+              <!-- /.nav__list -->
+            </nav>
+            <!-- /.nav-wrapper -->
+            <button data-toggle="modal" class="button-get">Получить</button>
+          </div>
+          <!-- /.nav -->
+          <button class="menu-button menu-button--mobile--hidden">
+            <span class="menu-button__line"></span>
+            <span class="menu-button__line"></span>
+            <span class="menu-button__line"></span>
+          </button>
+        </div>
+        <!-- /.header-wrapper -->
+      </div>
+      <!-- /.container -->
+    </header>
+    <!-- /.header -->
+
+    <section class="book">
+      <div class="container">
+        <div class="book-wrapper">
+          <div class="book-text">
+            <h1 class="book__title book__title-thankyou">
+              <span class="book__name">Error 404!</span>
+            </h1>
+            <a href="index.html" class="button-get go-to-main">На главную</a>
+          </div>
+          <!-- /.book-text -->
+        </div>
+        <!-- /.book-wrapper -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.book -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-wrapper">
+          <div class="footer__main">
+            <div class="footer__first">
+              <a href="index.html" class="logo logo-mobile footer__logo">
+                <img
+                  class="logo__image"
+                  src="templates/img/logo.png"
+                  alt="Logo: ehya logo"
+                />
+              </a>
+              <span class="footer__info"
+                >Создайте современный и креативный веб-сайт с crealand</span
+              >
+              <div class="footer__icons">
+                <a
+                  href="https://www.google.ru/"
+                  class="footer__link"
+                  target="_blank"
+                  ><svg
+                    width="100%"
+                    height="100%"
+                    viewBox="0 0 16 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="footer__icon"
+                  >
+                    <path
+                      d="M15.9583 8.52075C15.9583 8.02075 15.8958 7.64575 15.8333 7.2395H8.45831V9.89575H12.8333C12.6771 11.052 11.5208 13.2395 8.45831 13.2395C5.80206 13.2395 3.64581 11.052 3.64581 8.33325C3.64581 3.9895 8.77081 1.9895 11.5208 4.64575L13.6458 2.6145C12.3021 1.3645 10.5208 0.583252 8.45831 0.583252C4.14581 0.583252 0.708313 4.052 0.708313 8.33325C0.708313 12.6458 4.14581 16.0833 8.45831 16.0833C12.9271 16.0833 15.9583 12.9583 15.9583 8.52075Z"
+                      fill="#5A7184"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="https://twitter.com/"
+                  class="footer__link"
+                  target="_blank"
+                  ><svg
+                    width="100%"
+                    height="100%"
+                    viewBox="0 0 17 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="footer__icon"
+                  >
+                    <path
+                      d="M14.6771 4.08325C15.3021 3.6145 15.8646 3.052 16.3021 2.39575C15.7396 2.64575 15.0833 2.83325 14.4271 2.89575C15.1146 2.4895 15.6146 1.8645 15.8646 1.08325C15.2396 1.45825 14.5208 1.7395 13.8021 1.89575C13.1771 1.2395 12.3333 0.864502 11.3958 0.864502C9.58334 0.864502 8.11459 2.33325 8.11459 4.14575C8.11459 4.39575 8.14584 4.64575 8.20834 4.89575C5.48959 4.7395 3.05209 3.427 1.42709 1.45825C1.14584 1.927 0.989594 2.4895 0.989594 3.1145C0.989594 4.2395 1.55209 5.2395 2.45834 5.83325C1.92709 5.802 1.39584 5.677 0.958344 5.427V5.45825C0.958344 7.052 2.08334 8.3645 3.58334 8.677C3.33334 8.7395 3.02084 8.802 2.73959 8.802C2.52084 8.802 2.33334 8.77075 2.11459 8.7395C2.52084 10.052 3.73959 10.9895 5.17709 11.0208C4.05209 11.8958 2.64584 12.427 1.11459 12.427C0.833344 12.427 0.583344 12.3958 0.333344 12.3645C1.77084 13.302 3.48959 13.8333 5.36459 13.8333C11.3958 13.8333 14.6771 8.8645 14.6771 4.52075C14.6771 4.3645 14.6771 4.2395 14.6771 4.08325Z"
+                      fill="#5A7184"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="https://www.instagram.com/"
+                  class="footer__link"
+                  target="_blank"
+                  ><svg
+                    width="100%"
+                    height="100%"
+                    viewBox="0 0 15 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="footer__icon"
+                  >
+                    <path
+                      d="M7.33334 3.7395C5.33334 3.7395 3.73959 5.3645 3.73959 7.33325C3.73959 9.33325 5.33334 10.927 7.33334 10.927C9.30209 10.927 10.9271 9.33325 10.9271 7.33325C10.9271 5.3645 9.30209 3.7395 7.33334 3.7395ZM7.33334 9.677C6.05209 9.677 4.98959 8.64575 4.98959 7.33325C4.98959 6.052 6.02084 5.02075 7.33334 5.02075C8.61459 5.02075 9.64584 6.052 9.64584 7.33325C9.64584 8.64575 8.61459 9.677 7.33334 9.677ZM11.8958 3.6145C11.8958 3.14575 11.5208 2.77075 11.0521 2.77075C10.5833 2.77075 10.2083 3.14575 10.2083 3.6145C10.2083 4.08325 10.5833 4.45825 11.0521 4.45825C11.5208 4.45825 11.8958 4.08325 11.8958 3.6145ZM14.2708 4.45825C14.2083 3.33325 13.9583 2.33325 13.1458 1.52075C12.3333 0.708252 11.3333 0.458252 10.2083 0.395752C9.05209 0.333252 5.58334 0.333252 4.42709 0.395752C3.30209 0.458252 2.33334 0.708252 1.48959 1.52075C0.677094 2.33325 0.427094 3.33325 0.364594 4.45825C0.302094 5.6145 0.302094 9.08325 0.364594 10.2395C0.427094 11.3645 0.677094 12.3333 1.48959 13.177C2.33334 13.9895 3.30209 14.2395 4.42709 14.302C5.58334 14.3645 9.05209 14.3645 10.2083 14.302C11.3333 14.2395 12.3333 13.9895 13.1458 13.177C13.9583 12.3333 14.2083 11.3645 14.2708 10.2395C14.3333 9.08325 14.3333 5.6145 14.2708 4.45825ZM12.7708 11.4583C12.5521 12.0833 12.0521 12.552 11.4583 12.802C10.5208 13.177 8.33334 13.0833 7.33334 13.0833C6.30209 13.0833 4.11459 13.177 3.20834 12.802C2.58334 12.552 2.11459 12.0833 1.86459 11.4583C1.48959 10.552 1.58334 8.3645 1.58334 7.33325C1.58334 6.33325 1.48959 4.14575 1.86459 3.20825C2.11459 2.6145 2.58334 2.14575 3.20834 1.89575C4.11459 1.52075 6.30209 1.6145 7.33334 1.6145C8.33334 1.6145 10.5208 1.52075 11.4583 1.89575C12.0521 2.1145 12.5208 2.6145 12.7708 3.20825C13.1458 4.14575 13.0521 6.33325 13.0521 7.33325C13.0521 8.3645 13.1458 10.552 12.7708 11.4583Z"
+                      fill="#5A7184"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="https://www.linkedin.cn/"
+                  class="footer__link"
+                  target="_blank"
+                  ><svg
+                    width="100%"
+                    height="100%"
+                    viewBox="0 0 15 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="footer__icon"
+                  >
+                    <path
+                      d="M13.3333 0.333252H1.30209C0.770844 0.333252 0.333344 0.802002 0.333344 1.3645V13.3333C0.333344 13.8958 0.770844 14.3333 1.30209 14.3333H13.3333C13.8646 14.3333 14.3333 13.8958 14.3333 13.3333V1.3645C14.3333 0.802002 13.8646 0.333252 13.3333 0.333252ZM4.55209 12.3333H2.48959V5.677H4.55209V12.3333ZM3.52084 4.7395C2.83334 4.7395 2.30209 4.20825 2.30209 3.552C2.30209 2.89575 2.83334 2.33325 3.52084 2.33325C4.17709 2.33325 4.70834 2.89575 4.70834 3.552C4.70834 4.20825 4.17709 4.7395 3.52084 4.7395ZM12.3333 12.3333H10.2396V9.08325C10.2396 8.33325 10.2396 7.33325 9.17709 7.33325C8.08334 7.33325 7.92709 8.177 7.92709 9.052V12.3333H5.86459V5.677H7.83334V6.58325H7.86459C8.14584 6.052 8.83334 5.4895 9.83334 5.4895C11.9271 5.4895 12.3333 6.89575 12.3333 8.677V12.3333Z"
+                      fill="#5A7184"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <!-- /.footer__first -->
+            <div class="footer__second">
+              <div class="footer__product">
+                <h3 class="footer__title">Продукт</h3>
+                <ul class="footer__ul">
+                  <li class="footer__item">
+                    <a class="footer__item-link" onclick="return false" href="#"
+                      >Лэндинг</a
+                    >
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__item-link" onclick="return false" href="#"
+                      >Функции</a
+                    >
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__item-link" onclick="return false" href="#"
+                      >Документация</a
+                    >
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__item-link" onclick="return false" href="#"
+                      >Скидки</a
+                    >
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__item-link" onclick="return false" href="#"
+                      >Расценки</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <!-- /.footer__product -->
+              <div class="footer__services">
+                <h3 class="footer__title">Сервисы</h3>
+                <ul class="footer__ul">
+                  <li class="footer__item">
+                    <a class="footer__item-link" onclick="return false" href="#"
+                      >Документация</a
+                    >
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__item-link" onclick="return false" href="#"
+                      >Дизайн</a
+                    >
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__item-link" onclick="return false" href="#"
+                      >Темы</a
+                    >
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__item-link" onclick="return false" href="#"
+                      >Илюстрации</a
+                    >
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__item-link" onclick="return false" href="#"
+                      >UI Kit</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <!-- /.footer__service -->
+              <div class="footer__company">
+                <h3 class="footer__title">Компания</h3>
+                <ul class="footer__ul">
+                  <li class="footer__item">
+                    <a class="footer__item-link" onclick="return false" href="#"
+                      >О нас</a
+                    >
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__item-link" onclick="return false" href="#"
+                      >Условия</a
+                    >
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__item-link" onclick="return false" href="#"
+                      >Privacy Policy</a
+                    >
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__item-link" onclick="return false" href="#"
+                      >Careers</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <!-- /.footer__company -->
+              <div class="footer__more">
+                <h3 class="footer__title">Еще...</h3>
+                <ul class="footer__ul">
+                  <li class="footer__item">
+                    <a class="footer__item-link" onclick="return false" href="#"
+                      >Документация</a
+                    >
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__item-link" onclick="return false" href="#"
+                      >Лицензия</a
+                    >
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__item-link" onclick="return false" href="#"
+                      >Изменения</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <!-- /.footer__more -->
+            </div>
+            <!-- /.footer__second -->
+          </div>
+          <!-- /.footer__main -->
+          <div class="footer__bottom">
+            <div class="footer__like">
+              <svg
+                width="100%"
+                height="100%"
+                viewBox="0 0 25 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="footer__like-icon"
+              >
+                <path
+                  class="icon-like"
+                  d="M22.6562 1.95312C20.0781 -0.25 16.2812 0.171875 13.8906 2.60938L13 3.54688L12.0625 2.60938C9.71875 0.171875 5.875 -0.25 3.29688 1.95312C0.34375 4.48438 0.203125 8.98438 2.82812 11.7031L11.9219 21.0781C12.4844 21.6875 13.4688 21.6875 14.0312 21.0781L23.125 11.7031C25.75 8.98438 25.6094 4.48438 22.6562 1.95312Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+            <span class="footer__copyright"
+              >Copyright © 2019. Crafted with love.</span
+            >
+          </div>
+          <!-- /.footer__bottom -->
+        </div>
+        <!-- /.footer-wrapper -->
+      </div>
+      <!-- /.container -->
+    </footer>
+    <!-- /.footer -->
+
+    <a href="#" class="to-top" data-btn="toTop">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        width="13"
+        height="16"
+        viewBox="0 0 13 16"
+      >
+        <image
+          id="return"
+          width="13"
+          height="16"
+          xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAQCAYAAADNo/U5AAAAlUlEQVQoke3Quw5BURCF4c8ltF6GWkutpRc1DYWo9BKdRqHyZhIlicQlkiFynIsHsJKdPTtr/TOTLUf1PDOpGva4Y/YLUMEugNeZ5AElbHDCIoB53MMsaIULumhHuIFp1P0ksMQVvXh/Qmm+cQQGH02S0FPr2KRTRSt23hZ80gg3NLMCaZPeKhd0T9UfKoCOOOD85eAB2swhVgQkiCAAAAAASUVORK5CYII="
+        />
+      </svg>
+    </a>
+
+    <section class="modal">
+      <div class="modal__overlay"></div>
+      <!-- /.modal__overlay -->
+      <div class="modal__dialog">
+        <a href="#" class="modal__close">
+          <svg
+            width="17"
+            height="16"
+            viewBox="0 0 17 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10.4144 7.99995L16.6575 1.76968C17.0638 1.36443 17.0638 0.709193 16.6575 0.30394C16.2514 -0.101313 15.5948 -0.101313 15.1887 0.30394L8.94539 6.53421L2.70225 0.30394C2.29595 -0.101313 1.63953 -0.101313 1.23343 0.30394C0.827138 0.709193 0.827138 1.36443 1.23343 1.76968L7.47657 7.99995L1.23343 14.2302C0.827138 14.6355 0.827138 15.2907 1.23343 15.696C1.43582 15.8981 1.70192 15.9997 1.96784 15.9997C2.23376 15.9997 2.49967 15.8981 2.70225 15.696L8.94539 9.4657L15.1887 15.696C15.3913 15.8981 15.6572 15.9997 15.9231 15.9997C16.189 15.9997 16.455 15.8981 16.6575 15.696C17.0638 15.2907 17.0638 14.6355 16.6575 14.2302L10.4144 7.99995Z"
+              fill="white"
+            />
+          </svg>
+        </a>
+        <h3 class="modal__title modal__title--mb-3">Booking</h3>
+        <form action="send.php" method="POST" class="modal__form form">
+          <input
+            type="text"
+            class="input modal__input"
+            placeholder="Your Full Name*"
+            name="name-modal"
+            required
+          />
+          <input
+            type="tel"
+            class="input modal__input"
+            placeholder="Phone Number*"
+            name="phone-modal"
+            required
+          />
+          <input
+            type="email"
+            class="input modal__input"
+            placeholder="Email*"
+            name="email-modal"
+            required
+          />
+          <textarea
+            class="modal__message"
+            placeholder="Message"
+            name="message-modal"
+          ></textarea>
+          <div class="modal__send-wrapper">
+            <button class="button modal__button" type="submit">Send</button>
+            <span class="modal__info">* Required Fields</span>
+          </div>
+          <!-- /.modal__send-wrapper -->
+        </form>
+      </div>
+      <!-- /.modal__dialog -->
+    </section>
+    <!-- /.modal -->
+
+    <script src="templates/js/jquery-3.6.0.min.js"></script>
+    <script src="templates/js/swiper-bundle.min.js"></script>
+    <script src="templates/js/jquery.validate.min.js"></script>
+    <script src="templates/js/jquery.mask.min.js"></script>
+    <script src="templates/js/main.js"></script>
+  </body>
+</html>
