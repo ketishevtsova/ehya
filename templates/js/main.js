@@ -45,18 +45,14 @@ $(document).ready(function () {
     var modalDialog = $(".modal__dialog");
     modalOverlay.addClass("modal__overlay--visible");
     modalDialog.addClass("modal__dialog--visible");
-    $("body").css("overflow", "hidden");
-    $("body").css("padding-right", "17px");
   }
 
   function closeModal(event) {
-    $("body").css("overflow", "auto");
     if (event.key === "Escape" || event.type === "click") {
       var modalOverlay = $(".modal__overlay");
       var modalDialog = $(".modal__dialog");
       modalOverlay.removeClass("modal__overlay--visible");
       modalDialog.removeClass("modal__dialog--visible");
-      $("body").css("padding-right", "0");
     }
     event.preventDefault();
   }
@@ -145,7 +141,7 @@ $(document).ready(function () {
   // Главное видео
   $(".video-play-button").on("click", function onYouTubeIframeAPIReady() {
     player = new YT.Player("main-player", {
-      videoId: "xSgT4ZtT5M0",
+      videoId: "87by1DjfxLw",
       events: {
         onReady: videoPlay,
       },
@@ -160,7 +156,7 @@ $(document).ready(function () {
   // Видео 1
   $(".play-video-1").on("click", function onYouTubeIframeAPIReady() {
     player = new YT.Player("video-one", {
-      videoId: "p99ZE1SL4C0",
+      videoId: "qJqHjDsfKP0",
       events: {
         onReady: videoPlay,
       },
@@ -170,7 +166,7 @@ $(document).ready(function () {
   // Видео 2
   $(".play-video-2").on("click", function onYouTubeIframeAPIReady() {
     player = new YT.Player("video-two", {
-      videoId: "h_kcOChR6ao",
+      videoId: "87by1DjfxLw",
       events: {
         onReady: videoPlay,
       },
@@ -180,7 +176,7 @@ $(document).ready(function () {
   // Видео 3
   $(".play-video-3").on("click", function onYouTubeIframeAPIReady() {
     player = new YT.Player("video-three", {
-      videoId: "NEKjA6n8Ge0",
+      videoId: "87by1DjfxLw",
       events: {
         onReady: videoPlay,
       },
@@ -210,4 +206,15 @@ $(document).ready(function () {
       return false;
     });
   });
+  $(function () {
+    $(".nav-wrapper a").click(function () {
+      var _href = $(this).attr("href");
+      $("html, body").animate(
+        { scrollTop: $(_href).offset().top + "px" },
+        1500
+      );
+      return false;
+    });
+  });
+
 });
